@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { MainPage } from './pages/MainPage'
 import { Header } from './widgets/Header'
 import './app/styles/globalStyles.css';
@@ -5,8 +6,10 @@ import './app/styles/globalStyles.css';
 function App() {
 	return (
 		<>
-			<Header />
-			<MainPage />
+			<Suspense fallback='loading'>
+				<Header />
+				<MainPage />
+			</Suspense>
 		</>
 )
 }

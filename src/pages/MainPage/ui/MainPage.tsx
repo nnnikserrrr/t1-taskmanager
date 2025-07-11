@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box'
+import { TaskList } from '../../../widgets/TaskList'
 
 export const MainPage = () => {
 	return (
@@ -6,14 +7,13 @@ export const MainPage = () => {
 			<Box component='section' sx={
 				{
 					display: 'flex',
-					flexDirection: 'column',
 					backgroundColor: '#d9f1fa',
-					p: 3,
 					boxSizing: 'border-box',
-					height: '100%'
+					height: "100%",
+					justifyContent:'center',
 				}
 			}>
-			null
+				<TaskList />
 			</Box>
 		</>
 	)
