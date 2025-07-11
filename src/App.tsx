@@ -1,13 +1,14 @@
-import { Route, Routes } from 'react-router-dom'
 import { MainPage } from './pages/MainPage'
+import { Header } from './widgets/Header'
+import './app/styles/globalStyles.css';
 
 function App() {
-  
-  return (
-    <Routes>
-      <Route path = '/' element={<MainPage />}/>
-    </Routes>
-  )
+	return (
+		<>
+			<Header />
+			<MainPage />
+		</>
+)
 }
 
 export default App
