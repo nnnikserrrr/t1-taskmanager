@@ -1,9 +1,10 @@
 import Box from '@mui/material/Box'
+import { Kanban } from '../../Kanban'
 
-export const TaskList = () => {
+export const TaskItems = () => {
 	return (
-		<Box sx = {{display: "flex", border: '1px solid #1976d2', height: '90%', width:'95%', borderRadius: '10px', mt:'1%'}}>
-			content
+		<Box sx = {{ width: '95%', height: '100%'}}>
+			<Kanban />
 		</Box>
 	)
 }

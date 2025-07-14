@@ -1,19 +1,19 @@
 import Box from '@mui/material/Box'
-import { TaskList } from '../../../widgets/TaskList'
+import { TaskItems } from '../../../widgets/TaskList'
 
 export const MainPage = () => {
 	return (
 		<>
-			<Box component='section' sx={
+			<Box component='div' sx={
 				{
 					display: 'flex',
-					backgroundColor: '#d9f1fa',
-					boxSizing: 'border-box',
-					height: "100%",
-					justifyContent:'center',
+					maxHeight: '100%',
+					height: '100%',
+					width: '100%',
+					justifyContent: 'center'
 				}
 			}>
-				<TaskList />
+				<TaskItems />
 			</Box>
 		</>
 	)

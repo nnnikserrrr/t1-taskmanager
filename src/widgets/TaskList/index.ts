@@ -1,3 +1,3 @@
-import { TaskList } from './ui/TaskList.tsx'
+import { TaskItems } from './ui/TaskList.tsx'
 
-export {TaskList}
+export {TaskItems}
